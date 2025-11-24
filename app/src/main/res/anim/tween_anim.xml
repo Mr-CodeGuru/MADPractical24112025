@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:shareInterpolator="false">
+
+    <!-- Zoom In (Scale up) - Smooth transition -->
+    <scale
+        android:duration="500"
+        android:fromXScale="0.9"
+        android:fromYScale="0.9"
+        android:toXScale="1.1"
+        android:toYScale="1.1"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:interpolator="@android:anim/decelerate_interpolator" />
+
+    <!-- Rotate 360 degrees while zoomed - Smooth rotation -->
+    <rotate
+        android:duration="1000"
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:startOffset="500"
+        android:interpolator="@android:anim/linear_interpolator" />
+
+    <!-- Zoom Out (Scale down) - Smooth transition back -->
+    <scale
+        android:duration="500"
+        android:fromXScale="1.1"
+        android:fromYScale="1.1"
+        android:toXScale="0.9"
+        android:toYScale="0.9"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:startOffset="1500"
+        android:interpolator="@android:anim/accelerate_interpolator" />
+
+</set>

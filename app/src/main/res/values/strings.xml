@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MADPractical24112025</string>
+    <string name="text1">Second Activity</string>
+    <string name="text2">Text from first activity will appear here</string>
+    <string name="text3">Go Back</string>
+    <string name="text4">Welcome to MAD Practical!</string>
+    <string name="imageDes">UVPCE Image</string>
+    <string name="text5">Open Second Activity</string>
+    <string name="text6">Start Animation</string>
+    <string name="text7">Change Background Color</string>
+</resources>
